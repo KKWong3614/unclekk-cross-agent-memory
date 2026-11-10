@@ -1,0 +1,24 @@
+{
+  "_comment": "cross-agent-memory 共享数据库配置模板 - 复制到 ~/.hermes/memory_data/db_config.json 或 ~/.workbuddy/memory_data/db_config.json",
+  "_usage": "将此文件复制到各自的 memory_data 目录，然后修改数据库连接参数",
+  
+  "host": "127.0.0.1",
+  "port": 3306,
+  "user": "root",
+  "password": "",
+  "database": "cross_agent_memory",
+  "charset": "utf8mb4",
+  "connect_timeout": 10,
+  "read_timeout": 30,
+  "write_timeout": 30,
+  "autocommit": true,
+  
+  "_env_override": "环境变量优先级高于此配置文件",
+  "_env_vars": [
+    "CROSS_AGENT_MEMORY_DB_HOST",
+    "CROSS_AGENT_MEMORY_DB_PORT",
+    "CROSS_AGENT_MEMORY_DB_USER",
+    "CROSS_AGENT_MEMORY_DB_PASSWORD",
+    "CROSS_AGENT_MEMORY_DB_NAME"
+  ]
+}
